@@ -1,0 +1,41 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/kamoliddinxoji/apisix-ui
+  pullPolicy: IfNotPresent
+  tag: ""  # defaults to Chart.appVersion
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  hosts:
+    - host: apisix-ui.local
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+
+resources: {}
+
+config:
+  # PostgreSQL connection string
+  databaseUrl: "postgres://apisix_ui:secret@postgres:5432/apisix_ui?sslmode=disable"
+
+  # JWT signing secret — MUST be changed in production
+  jwtSecret: "change-me-in-production-32chars!!"
+
+  # First admin user (seeded only when users table is empty)
+  adminUsername: "admin"
+  adminPassword: ""
+
+  # Default APISIX environment seed (set to true only on first install)
+  createDefaultEnv: false
+  defaultEnvName: ""
+  defaultEnvDisplayName: ""
+  defaultApisixUrl: ""
+  defaultApisixPassword: ""

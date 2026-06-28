@@ -1,0 +1,16 @@
+apiVersion: v2
+name: apisix-ui
+description: A web UI for managing Apache APISIX
+type: application
+version: 0.1.0
+appVersion: "0.1.0-alpha.1"
+keywords:
+  - apisix
+  - api-gateway
+  - ui
+home: https://github.com/Kamoliddinxoji/apisix-ui
+sources:
+  - https://github.com/Kamoliddinxoji/apisix-ui
+maintainers:
+  - name: Kamoliddinxoji
+    url: https://github.com/Kamoliddinxoji
