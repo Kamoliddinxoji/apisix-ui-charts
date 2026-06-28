@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  apisix-ui:
+  - apiVersion: v2
+    appVersion: 0.1.0-alpha.1
+    created: "2026-06-29T02:02:38.056197835+05:00"
+    description: A web UI for managing Apache APISIX routes, upstreams and services
+    digest: 42da601f62bb39cd77c3108b4a70bf6011eeac125bfce27dfbd714db9121457a
+    home: https://github.com/Kamoliddinxoji/apisix-ui
+    keywords:
+    - apisix
+    - api-gateway
+    - ui
+    maintainers:
+    - name: Kamoliddinxoji
+      url: https://github.com/Kamoliddinxoji
+    name: apisix-ui
+    sources:
+    - https://github.com/Kamoliddinxoji/apisix-ui
+    type: application
+    urls:
+    - https://github.com/Kamoliddinxoji/apisix-ui-charts/releases/download/apisix-ui-0.1.0/apisix-ui-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-06-29T02:02:38.055771721+05:00"
