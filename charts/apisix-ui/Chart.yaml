@@ -1,6 +1,6 @@
 apiVersion: v2
 name: apisix-ui
-description: A web UI for managing Apache APISIX
+description: A web UI for managing Apache APISIX routes, upstreams and services
 type: application
 version: 0.1.0
 appVersion: "0.1.0-alpha.1"
